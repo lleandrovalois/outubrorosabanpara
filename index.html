@@ -1,0 +1,1119 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Outubro Rosa Banpará • Cuidar de Você é Nosso Maior Investimento</title>
+  <meta name="description" content="Espaço exclusivo de recepção e autocuidado para as mulheres paraenses. Campanha Outubro Rosa Banpará: autoexame, prevenção, rede de apoio no Pará e benefícios especiais.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Fontes Google: Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+          colors: {
+            bp: {
+              navy: '#002B66',
+              royal: '#003882',
+              cyan: '#0088CC',
+              cyanLight: '#E6F4FA',
+              red: '#E30613',
+              redDark: '#B8000B',
+              bgLight: '#FBF8F9',
+              slate: '#1E293B',
+              border: '#E2E8F0',
+              accentYellow: '#FFB800',
+              // Paleta Outubro Rosa Harmonizada com Banpará
+              rosa: '#EC4899',
+              rosaDark: '#BE185D',
+              rosaDeep: '#9D174D',
+              rosaLight: '#FDF2F8',
+              rosaSoft: '#FCE7F3',
+              rosaVibrant: '#F43F5E',
+              rosaBorder: '#FBCFE8',
+            }
+          },
+          boxShadow: {
+            'custom': '0 10px 30px -5px rgba(0, 43, 102, 0.08)',
+            'custom-lg': '0 20px 40px -10px rgba(0, 43, 102, 0.16)',
+            'rosa-glow': '0 15px 35px -5px rgba(236, 72, 153, 0.25)',
+            'float': '0 25px 50px -12px rgba(0, 0, 0, 0.25)',
+          },
+          animation: {
+            'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+            'float-slow': 'float 6s ease-in-out infinite',
+            'shimmer': 'shimmer 2.5s infinite',
+          },
+          keyframes: {
+            float: {
+              '0%, 100%': { transform: 'translateY(0px)' },
+              '50%': { transform: 'translateY(-10px)' },
+            },
+            shimmer: {
+              '100%': { transform: 'translateX(100%)' }
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #FAF5F7;
+      color: #1E293B;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .hero-rosa-gradient {
+      background: linear-gradient(135deg, #001F4D 0%, #002B66 40%, #581639 70%, #9D174D 100%);
+    }
+
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(251, 207, 232, 0.6);
+    }
+
+    .glass-rosa {
+      background: linear-gradient(135deg, rgba(253, 242, 248, 0.9) 0%, rgba(252, 231, 243, 0.8) 100%);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(244, 114, 182, 0.3);
+    }
+
+    .fade-in {
+      animation: fadeIn 0.4s ease-out forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Estilização moderna de scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+      height: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #FDF2F8;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #F472B6;
+      border-radius: 9999px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #DB2777;
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-bp-rosa selection:text-white">
+
+  <!-- ========================================================================= -->
+  <!-- TOP BANNER DE CONEXÃO COM O PORTAL OFICIAL & CAMPANHA QR CODE            -->
+  <!-- ========================================================================= -->
+  <div class="bg-gradient-to-r from-bp-navy via-bp-royal to-bp-rosaDeep text-white text-xs py-2 px-4 border-b border-pink-400/20 shadow-xs">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-2 text-center sm:text-left">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 bg-pink-500/30 text-pink-200 border border-pink-400/40 px-2.5 py-0.5 rounded-full text-[11px] font-bold">
+          <span class="w-2 h-2 rounded-full bg-pink-400 animate-pulse"></span>
+          Campanha Oficial 2026
+        </span>
+        <span class="text-slate-200 text-[11px] sm:text-xs">
+          Você conectou via <strong>QR Code do Banpará</strong> • Acesso Exclusivo Mulher
+        </span>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="base-site.html" class="inline-flex items-center gap-1.5 text-xs text-pink-200 hover:text-white font-medium hover:underline transition-all">
+          <span>Acessar Portal Geral de Soluções</span>
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================= -->
+  <!-- HEADER INSTITUCIONAL BANPARÁ • EXTENSÃO OUTUBRO ROSA                      -->
+  <!-- ========================================================================= -->
+  <header class="w-full bg-white/95 backdrop-blur-md z-50 sticky top-0 shadow-sm border-b border-pink-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8 py-3.5 flex items-center justify-between">
+      
+      <!-- Marca Institucional Banpará + Badge Outubro Rosa -->
+      <div class="flex items-center gap-4">
+        <a href="index.html" class="flex items-center gap-3 group focus:outline-hidden" title="Banpará - Outubro Rosa">
+          <img src="image-removebg.png" alt="Logotipo Oficial Banpará" class="h-9 sm:h-11 w-auto object-contain transition-transform group-hover:scale-102">
+        </a>
+        
+        <!-- Divisor vertical discreto -->
+        <div class="hidden sm:block h-8 w-[1px] bg-pink-200"></div>
+
+        <!-- Badge da Campanha Rosa -->
+        <div class="hidden sm:flex items-center gap-2 bg-pink-50 border border-pink-200 px-3 py-1 rounded-full">
+          <img src="laco-outubro-rosa.png" alt="Laço Outubro Rosa" class="h-5 w-auto object-contain">
+          <span class="text-xs font-black text-bp-rosaDark tracking-tight">OUTUBRO ROSA</span>
+        </div>
+      </div>
+
+      <!-- Menu de Ações Rápidas & Selo Oficial -->
+      <div class="flex items-center gap-2 sm:gap-3">
+        <a href="#cards-secao" class="hidden md:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 hover:text-bp-rosaDark hover:bg-pink-50 transition-colors">
+          <span>Tópicos & Cards</span>
+        </a>
+
+        <a href="#locais-apoio" class="hidden lg:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold text-slate-700 hover:text-bp-rosaDark hover:bg-pink-50 transition-colors">
+          <span>Rede no Pará</span>
+        </a>
+
+        <a href="#lembrete-exame" class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-semibold bg-pink-100 text-bp-rosaDark hover:bg-pink-200 transition-colors">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <span>Agendar Lembrete</span>
+        </a>
+
+        <!-- Selo de Canal Oficial & Seguro -->
+        <div class="flex items-center gap-1.5 bg-emerald-50 border border-emerald-200 px-3 py-1.5 rounded-full text-xs font-semibold text-emerald-800 shadow-xs">
+          <svg class="w-3.5 h-3.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+          </svg>
+          <span class="text-[11px] sm:text-xs">Espaço Oficial</span>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="flex-grow">
+
+    <!-- ========================================================================= -->
+    <!-- HERO SECTION: ÁREA DE RECEPÇÃO EXCLUSIVA (ORIGEM DO QR CODE)             -->
+    <!-- ========================================================================= -->
+    <section class="relative overflow-hidden hero-rosa-gradient text-white py-12 lg:py-20">
+      
+      <!-- Detalhes Gráficos Sutis de Fundo -->
+      <div class="absolute inset-0 pointer-events-none opacity-20 select-none overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-pink-500 blur-3xl"></div>
+        <div class="absolute -bottom-24 -left-24 w-96 h-96 rounded-full bg-blue-600 blur-3xl"></div>
+        <!-- Ondas e Laços decorativos -->
+        <svg class="absolute top-1/2 right-10 w-72 h-72 text-pink-300/30" viewBox="0 0 100 100" fill="none" stroke="currentColor" stroke-width="1">
+          <circle cx="50" cy="50" r="45" stroke-dasharray="3 3"/>
+          <circle cx="50" cy="50" r="30" stroke-dasharray="2 2"/>
+        </svg>
+      </div>
+
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+          
+          <!-- Lado Esquerdo: Recepção Acolhedora -->
+          <div class="lg:col-span-7 flex flex-col justify-center text-center lg:text-left">
+            
+            <div class="inline-flex items-center gap-2 bg-gradient-to-r from-pink-600 to-rose-600 text-white text-[11px] font-black uppercase tracking-wider px-4 py-1.5 rounded-full w-fit mx-auto lg:mx-0 shadow-lg mb-4 border border-pink-300/30">
+              <img src="laco-outubro-rosa.png" alt="Laço" class="h-4 w-auto inline">
+              <span>BEM-VINDA AO ESPAÇO MULHER BANPARÁ</span>
+            </div>
+
+            <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight leading-tight text-white drop-shadow-sm">
+              Cuidar de você é o nosso maior <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-rose-200 to-pink-100">investimento.</span>
+            </h1>
+
+            <p class="text-slate-200 text-base sm:text-lg mt-5 max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+              Você chegou até aqui ao escanear o <strong>QR Code da nossa campanha</strong> nas agências ou materiais do Banpará. Este espaço foi criado especialmente para você: descubra o passo a passo do <strong>autoexame</strong>, localize <strong>postos de apoio à saúde da mulher em todo o Pará</strong> e acesse soluções feitas com carinho para sua vida.
+            </p>
+
+            <!-- Cards de Acesso Rápido no Hero -->
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 mt-8 max-w-xl mx-auto lg:mx-0">
+              <a href="#card-autoexame" class="p-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 backdrop-blur-xs transition-all text-center group cursor-pointer">
+                <span class="text-2xl block mb-1 group-hover:scale-110 transition-transform">🌸</span>
+                <span class="text-xs font-bold text-white block">Autoexame</span>
+                <span class="text-[10px] text-pink-200">Passo a passo</span>
+              </a>
+
+              <a href="#card-prevencao" class="p-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 backdrop-blur-xs transition-all text-center group cursor-pointer">
+                <span class="text-2xl block mb-1 group-hover:scale-110 transition-transform">🩺</span>
+                <span class="text-xs font-bold text-white block">Prevenção</span>
+                <span class="text-[10px] text-pink-200">Guia de exames</span>
+              </a>
+
+              <a href="#locais-apoio" class="p-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 backdrop-blur-xs transition-all text-center group cursor-pointer">
+                <span class="text-2xl block mb-1 group-hover:scale-110 transition-transform">📍</span>
+                <span class="text-xs font-bold text-white block">Rede no Pará</span>
+                <span class="text-[10px] text-pink-200">Ophir Loyola e +</span>
+              </a>
+
+              <a href="#card-quiz" class="p-3 rounded-2xl bg-white/10 hover:bg-white/20 border border-white/15 backdrop-blur-xs transition-all text-center group cursor-pointer">
+                <span class="text-2xl block mb-1 group-hover:scale-110 transition-transform">✨</span>
+                <span class="text-xs font-bold text-white block">Quiz</span>
+                <span class="text-[10px] text-pink-200">Mitos e Verdades</span>
+              </a>
+            </div>
+
+            <!-- Dados Relevantes e Impactantes -->
+            <div class="flex flex-wrap items-center justify-center lg:justify-start gap-6 mt-8 pt-6 border-t border-white/15 text-xs text-pink-100">
+              <div class="flex items-center gap-2">
+                <span class="text-2xl font-black text-white">95%</span>
+                <span class="text-[11px] leading-tight text-slate-300">de chance de cura com diagnóstico precoce</span>
+              </div>
+              <div class="h-6 w-[1px] bg-white/20 hidden sm:block"></div>
+              <div class="flex items-center gap-2">
+                <span class="text-2xl font-black text-white">100%</span>
+                <span class="text-[11px] leading-tight text-slate-300">gratuito pelo SUS nas unidades do Pará</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Lado Direito: Imagem e Badge do QR Code Autêntico -->
+          <div class="lg:col-span-5 flex flex-col items-center justify-center">
+            
+            <div class="relative w-full max-w-md mx-auto">
+              <!-- Imagem Hero Mulheres Banpará -->
+              <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white/20 bg-gradient-to-tr from-pink-900 to-bp-navy">
+                <img src="hero-mulheres.jpg" alt="Mulheres Paraenses Unidas no Outubro Rosa" class="w-full h-72 sm:h-80 object-cover object-center filter brightness-105">
+                
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                
+                <div class="absolute bottom-4 left-4 right-4 text-white">
+                  <div class="flex items-center gap-2 mb-1">
+                    <span class="w-2.5 h-2.5 rounded-full bg-pink-400"></span>
+                    <span class="text-xs uppercase tracking-wider font-extrabold text-pink-200">Movimento Outubro Rosa</span>
+                  </div>
+                  <p class="text-sm font-bold text-white leading-snug">
+                    "O amor próprio começa no toque e se fortalece no cuidado."
+                  </p>
+                </div>
+              </div>
+
+              <!-- Badge Flutuante: QR Code Escaneado com Sucesso -->
+              <div class="absolute -bottom-6 -right-2 sm:-right-4 bg-white p-3 sm:p-4 rounded-2xl shadow-float border border-pink-200 flex items-center gap-3 animate-float-slow">
+                <div class="w-12 h-12 rounded-xl bg-pink-50 p-1 border border-pink-100 flex items-center justify-center">
+                  <img src="qr-code.jpeg" alt="QR Code Banpará" class="w-full h-full object-contain rounded-lg">
+                </div>
+                <div>
+                  <div class="flex items-center gap-1.5">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span class="text-[10px] font-black uppercase text-emerald-700 tracking-wider">Origem Validada</span>
+                  </div>
+                  <h4 class="text-xs font-black text-bp-navy">Campanha Banpará</h4>
+                  <p class="text-[10px] text-slate-500">Recepção Mulher 2026</p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SEÇÃO DE CARDS INTERATIVOS PRINCIPAIS                                     -->
+    <!-- ========================================================================= -->
+    <section id="cards-secao" class="py-12 lg:py-16 max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <!-- Cabeçalho da Seção -->
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="text-xs font-extrabold uppercase tracking-widest text-bp-rosaDark bg-pink-100 px-3.5 py-1 rounded-full inline-block mb-3">
+          PILHARES DE CUIDADO & INFORMAÇÃO
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-black text-bp-navy tracking-tight">
+          Explore os cards interativos da sua jornada de saúde
+        </h2>
+        <p class="text-sm sm:text-base text-slate-600 mt-3">
+          Clique nos cards para interagir, conferir ilustrações didáticas, calcular recomendações personalizadas para sua idade e acessar canais de acolhimento.
+        </p>
+      </div>
+
+      <!-- GRID DOS CARDS INTERATIVOS -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        
+        <!-- ============================================================ -->
+        <!-- CARD 1: AUTOEXAME DAS MAMAS (PASSO A PASSO INTERATIVO)       -->
+        <!-- ============================================================ -->
+        <article id="card-autoexame" class="glass-card rounded-3xl p-6 sm:p-7 shadow-custom hover:shadow-rosa-glow transition-all duration-300 flex flex-col justify-between border-t-4 border-t-pink-500 group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-pink-100 text-pink-600 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                🤲
+              </div>
+              <span class="text-[10px] font-black uppercase tracking-wider bg-pink-50 text-pink-700 border border-pink-200 px-2.5 py-1 rounded-full">
+                Autoconhecimento
+              </span>
+            </div>
+
+            <h3 class="text-xl font-black text-bp-navy mb-2 group-hover:text-bp-rosaDark transition-colors">
+              O Autoexame das Mamas
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Conhecer o próprio corpo é o primeiro passo para perceber qualquer alteração precoce. Aprenda a técnica em 3 momentos simples da sua rotina.
+            </p>
+
+            <!-- Mini visualizador interativo de etapas -->
+            <div class="bg-pink-50/60 rounded-2xl p-3.5 border border-pink-100 space-y-2 mb-4">
+              <div class="flex items-center gap-2.5 text-xs text-slate-700">
+                <span class="w-5 h-5 rounded-full bg-pink-500 text-white font-black text-[10px] flex items-center justify-center shrink-0">1</span>
+                <span><strong>Em frente ao espelho:</strong> Observe forma e textura.</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs text-slate-700">
+                <span class="w-5 h-5 rounded-full bg-pink-500 text-white font-black text-[10px] flex items-center justify-center shrink-0">2</span>
+                <span><strong>No banho:</strong> Deslize os dedos ensaboados.</span>
+              </div>
+              <div class="flex items-center gap-2.5 text-xs text-slate-700">
+                <span class="w-5 h-5 rounded-full bg-pink-500 text-white font-black text-[10px] flex items-center justify-center shrink-0">3</span>
+                <span><strong>Deitada:</strong> Palpação em movimentos circulares.</span>
+              </div>
+            </div>
+
+            <!-- Imagem miniatura clicável do infográfico -->
+            <div class="relative rounded-2xl overflow-hidden border border-pink-200 cursor-pointer mb-2" onclick="abrirModalAutoexame()">
+              <img src="guia-autoexame.jpg" alt="Infográfico Autoexame" class="w-full h-32 object-cover object-top hover:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-pink-900/30 flex items-center justify-center hover:bg-pink-900/10 transition-colors">
+                <span class="bg-white/90 text-bp-rosaDark text-[11px] font-bold px-3 py-1.5 rounded-full shadow-md flex items-center gap-1.5">
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                  Ver Infográfico Completo
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-4 border-t border-pink-100 flex items-center justify-between mt-3">
+            <span class="text-[11px] text-slate-500 font-medium">Recomendado mensalmente</span>
+            <button onclick="abrirModalAutoexame()" class="px-4 py-2 bg-gradient-to-r from-pink-600 to-rose-600 text-white text-xs font-bold rounded-xl hover:from-pink-700 hover:to-rose-700 shadow-xs transition-all cursor-pointer">
+              Passo a Passo
+            </button>
+          </div>
+        </article>
+
+        <!-- ============================================================ -->
+        <!-- CARD 2: A IMPORTÂNCIA DE SE CUIDAR (CALCULADORA DE EXAMES)   -->
+        <!-- ============================================================ -->
+        <article id="card-prevencao" class="glass-card rounded-3xl p-6 sm:p-7 shadow-custom hover:shadow-rosa-glow transition-all duration-300 flex flex-col justify-between border-t-4 border-t-bp-royal group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-blue-100 text-bp-royal flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                💖
+              </div>
+              <span class="text-[10px] font-black uppercase tracking-wider bg-blue-50 text-bp-royal border border-blue-200 px-2.5 py-1 rounded-full">
+                Prevenção Integral
+              </span>
+            </div>
+
+            <h3 class="text-xl font-black text-bp-navy mb-2 group-hover:text-bp-royal transition-colors">
+              A Importância de Se Cuidar
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              O câncer de mama tem até <strong>95% de chance de cura</strong> quando diagnosticado em fase inicial. O cuidado diário combina mamografia, atividade física e hábitos saudáveis.
+            </p>
+
+            <!-- Calculadora Interativa de Recomendações por Idade -->
+            <div class="bg-blue-50/50 rounded-2xl p-4 border border-blue-100 mb-4">
+              <label class="block text-[11px] font-bold text-slate-700 mb-2">
+                Selecione sua faixa etária para ver recomendações:
+              </label>
+              <div class="grid grid-cols-3 gap-1.5 mb-3">
+                <button type="button" onclick="setAgeGroup('jovem', this)" class="age-tab-btn py-1.5 text-[11px] font-bold rounded-lg border border-slate-200 bg-white text-slate-700 hover:border-bp-royal transition-all cursor-pointer">
+                  20 - 39 anos
+                </button>
+                <button type="button" onclick="setAgeGroup('alvo', this)" class="age-tab-btn py-1.5 text-[11px] font-bold rounded-lg border-2 border-bp-royal bg-blue-100/70 text-bp-royal shadow-xs transition-all cursor-pointer">
+                  40 - 49 anos
+                </button>
+                <button type="button" onclick="setAgeGroup('senior', this)" class="age-tab-btn py-1.5 text-[11px] font-bold rounded-lg border border-slate-200 bg-white text-slate-700 hover:border-bp-royal transition-all cursor-pointer">
+                  50+ anos
+                </button>
+              </div>
+
+              <!-- Painel Dinâmico de Recomendações -->
+              <div id="age-advice-box" class="text-xs text-slate-700 bg-white p-3 rounded-xl border border-blue-100">
+                <div class="font-bold text-bp-navy mb-1 flex items-center gap-1.5">
+                  <span class="w-2 h-2 rounded-full bg-bp-royal"></span>
+                  Mamografia Anual Recomendada
+                </div>
+                <p class="text-[11px] text-slate-600">
+                  A Sociedade Brasileira de Mastologia recomenda a mamografia anual a partir dos 40 anos para todas as mulheres, garantindo diagnósticos precoces antes de nódulos palpáveis.
+                </p>
+              </div>
+            </div>
+
+            <!-- Destaque de 3 hábitos protetores -->
+            <div class="grid grid-cols-3 gap-2 text-center text-[10px] text-slate-600">
+              <div class="bg-white p-2 rounded-xl border border-slate-100">
+                <span class="block text-base mb-0.5">🥗</span>
+                <span class="font-bold block text-slate-800">Alimentação</span>
+                Menos ultraprocessados
+              </div>
+              <div class="bg-white p-2 rounded-xl border border-slate-100">
+                <span class="block text-base mb-0.5">🏃‍♀️</span>
+                <span class="font-bold block text-slate-800">Exercício</span>
+                30 min/dia reduz risco
+              </div>
+              <div class="bg-white p-2 rounded-xl border border-slate-100">
+                <span class="block text-base mb-0.5">🧘‍♀️</span>
+                <span class="font-bold block text-slate-800">Saúde Mental</span>
+                Pausa e acolhimento
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-3">
+            <span class="text-[11px] text-slate-500 font-medium">Protocolo SBM / INCA</span>
+            <button onclick="abrirModalPilaresCuidado()" class="px-4 py-2 bg-bp-royal text-white text-xs font-bold rounded-xl hover:bg-bp-navy shadow-xs transition-all cursor-pointer">
+              Ver Dicas Médicas
+            </button>
+          </div>
+        </article>
+
+        <!-- ============================================================ -->
+        <!-- CARD 3: LOCAIS DE APOIO À MULHER NO PARÁ (REGIONALIZADO)     -->
+        <!-- ============================================================ -->
+        <article id="card-locais" class="glass-card rounded-3xl p-6 sm:p-7 shadow-custom hover:shadow-rosa-glow transition-all duration-300 flex flex-col justify-between border-t-4 border-t-emerald-500 group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                🏥
+              </div>
+              <span class="text-[10px] font-black uppercase tracking-wider bg-emerald-50 text-emerald-800 border border-emerald-200 px-2.5 py-1 rounded-full">
+                Rede Pará
+              </span>
+            </div>
+
+            <h3 class="text-xl font-black text-bp-navy mb-2 group-hover:text-emerald-700 transition-colors">
+              Locais de Apoio no Pará
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Conheça os centros públicos de referência em Belém e no interior para exames, mamografias e atendimento humanizado 100% pelo SUS.
+            </p>
+
+            <!-- Lista Rápida dos Principais Centros no Pará -->
+            <div class="space-y-2.5 mb-4">
+              <div class="p-3 bg-white rounded-2xl border border-slate-200 hover:border-emerald-300 transition-all">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-bp-navy">Hospital Ophir Loyola (HOL)</span>
+                  <span class="text-[9px] bg-pink-100 text-pink-700 font-bold px-2 py-0.5 rounded-full">Belém</span>
+                </div>
+                <p class="text-[11px] text-slate-500 mt-0.5">Centro de Alta Complexidade em Oncologia (CACON)</p>
+                <div class="flex items-center justify-between mt-2 pt-1.5 border-t border-slate-100 text-[10px]">
+                  <span class="text-slate-600 font-medium">Tel: (91) 3265-6500</span>
+                  <a href="tel:9132656500" class="text-emerald-700 font-bold hover:underline">Ligar Agora</a>
+                </div>
+              </div>
+
+              <div class="p-3 bg-white rounded-2xl border border-slate-200 hover:border-emerald-300 transition-all">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-bp-navy">Hospital Regional do Baixo Amazonas</span>
+                  <span class="text-[9px] bg-blue-100 text-blue-700 font-bold px-2 py-0.5 rounded-full">Santarém</span>
+                </div>
+                <p class="text-[11px] text-slate-500 mt-0.5">Referência em Oncologia no Oeste do Pará</p>
+                <div class="flex items-center justify-between mt-2 pt-1.5 border-t border-slate-100 text-[10px]">
+                  <span class="text-slate-600 font-medium">Tel: (93) 2101-0700</span>
+                  <a href="tel:9321010700" class="text-emerald-700 font-bold hover:underline">Ligar Agora</a>
+                </div>
+              </div>
+
+              <div class="p-3 bg-white rounded-2xl border border-slate-200 hover:border-emerald-300 transition-all">
+                <div class="flex items-center justify-between">
+                  <span class="text-xs font-bold text-bp-navy">Hospital Regional do Sudeste</span>
+                  <span class="text-[9px] bg-purple-100 text-purple-700 font-bold px-2 py-0.5 rounded-full">Marabá</span>
+                </div>
+                <p class="text-[11px] text-slate-500 mt-0.5">Atendimento Especializado na Região Sul/Sudeste</p>
+                <div class="flex items-center justify-between mt-2 pt-1.5 border-t border-slate-100 text-[10px]">
+                  <span class="text-slate-600 font-medium">Tel: (94) 3329-8700</span>
+                  <a href="tel:9433298700" class="text-emerald-700 font-bold hover:underline">Ligar Agora</a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-3">
+            <span class="text-[11px] text-slate-500 font-medium">Belém & Interior</span>
+            <a href="#locais-apoio" class="px-4 py-2 bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold rounded-xl shadow-xs transition-all cursor-pointer">
+              Ver Mapa & Todos
+            </a>
+          </div>
+        </article>
+
+        <!-- ============================================================ -->
+        <!-- CARD 4: MITOS E VERDADES INTERATIVO (QUIZ EDUCATIVO)         -->
+        <!-- ============================================================ -->
+        <article id="card-quiz" class="glass-card rounded-3xl p-6 sm:p-7 shadow-custom hover:shadow-rosa-glow transition-all duration-300 flex flex-col justify-between border-t-4 border-t-amber-500 group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-amber-100 text-amber-700 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                💡
+              </div>
+              <span class="text-[10px] font-black uppercase tracking-wider bg-amber-50 text-amber-800 border border-amber-200 px-2.5 py-1 rounded-full">
+                Quiz Rápido
+              </span>
+            </div>
+
+            <h3 class="text-xl font-black text-bp-navy mb-2 group-hover:text-amber-700 transition-colors">
+              Mitos e Verdades
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              Teste seus conhecimentos sobre o câncer de mama e desmistifique crenças comuns com base em evidências científicas.
+            </p>
+
+            <!-- Quiz Interativo Container -->
+            <div class="bg-amber-50/50 rounded-2xl p-4 border border-amber-200">
+              <div class="flex items-center justify-between text-[11px] font-bold text-amber-900 mb-2">
+                <span id="quiz-question-counter">Pergunta 1 de 5</span>
+                <span id="quiz-score-badge" class="bg-amber-200 text-amber-900 px-2 py-0.5 rounded-full text-[10px]">Pontos: 0</span>
+              </div>
+
+              <div id="quiz-question-box" class="min-h-[85px] flex flex-col justify-center">
+                <p id="quiz-question-text" class="text-xs font-bold text-slate-800 leading-snug">
+                  "O autoexame das mamas substitui a necessidade de realizar a mamografia anual?"
+                </p>
+                <div id="quiz-feedback-box" class="hidden mt-2 text-[11px] p-2 rounded-xl"></div>
+              </div>
+
+              <!-- Botões de Resposta -->
+              <div id="quiz-action-buttons" class="grid grid-cols-2 gap-2 mt-3">
+                <button type="button" onclick="responderQuiz('mito')" class="py-2.5 px-3 bg-white hover:bg-pink-50 text-pink-700 border border-pink-200 text-xs font-bold rounded-xl shadow-xs transition-all active:scale-95 cursor-pointer">
+                  ❌ É MITO
+                </button>
+                <button type="button" onclick="responderQuiz('verdade')" class="py-2.5 px-3 bg-white hover:bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-bold rounded-xl shadow-xs transition-all active:scale-95 cursor-pointer">
+                  ✅ É VERDADE
+                </button>
+              </div>
+
+              <div id="quiz-next-button" class="hidden mt-3">
+                <button type="button" onclick="proximaPerguntaQuiz()" class="w-full py-2 bg-bp-navy text-white text-xs font-bold rounded-xl hover:bg-bp-royal transition-all cursor-pointer">
+                  Próxima Pergunta →
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-3">
+            <span class="text-[11px] text-slate-500 font-medium">Informação confiável</span>
+            <button onclick="reiniciarQuiz()" class="text-xs text-slate-600 hover:text-bp-navy font-bold underline cursor-pointer">
+              Reiniciar Quiz
+            </button>
+          </div>
+        </article>
+
+        <!-- ============================================================ -->
+        <!-- CARD 5: BANPARÁ DELAS • APOIO & EMPODERAMENTO FEMININO       -->
+        <!-- ============================================================ -->
+        <article id="card-banpara-delas" class="glass-card rounded-3xl p-6 sm:p-7 shadow-custom hover:shadow-rosa-glow transition-all duration-300 flex flex-col justify-between border-t-4 border-t-bp-red group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-red-100 text-bp-red flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                🏛️
+              </div>
+              <span class="text-[10px] font-black uppercase tracking-wider bg-red-50 text-bp-red border border-red-200 px-2.5 py-1 rounded-full">
+                Banpará Delas
+              </span>
+            </div>
+
+            <h3 class="text-xl font-black text-bp-navy mb-2 group-hover:text-bp-red transition-colors">
+              Apoio & Benefícios Banpará
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              O Banco do Estado do Pará caminha ao lado das mulheres que movem o nosso estado, com linhas especiais de crédito, seguros de proteção e consultoria financeira.
+            </p>
+
+            <div class="space-y-2.5 mb-4">
+              <!-- Item 1: Empodera Banpará -->
+              <div class="p-3 bg-pink-50/50 rounded-2xl border border-pink-200/80">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">💼</span>
+                  <h4 class="text-xs font-bold text-bp-navy">Programa Empodera Banpará</h4>
+                </div>
+                <p class="text-[11px] text-slate-600 mt-1">
+                  Crédito e microcrédito orientado com taxas diferenciadas para mulheres empreendedoras, produtoras e autônomas do Pará.
+                </p>
+              </div>
+
+              <!-- Item 2: Seguro Vida Mulher -->
+              <div class="p-3 bg-blue-50/50 rounded-2xl border border-blue-200/80">
+                <div class="flex items-center gap-2">
+                  <span class="text-base">🛡️</span>
+                  <h4 class="text-xs font-bold text-bp-navy">Seguro Vida Mulher Banpará</h4>
+                </div>
+                <p class="text-[11px] text-slate-600 mt-1">
+                  Proteção completa com indenização especial em caso de diagnóstico de câncer de mama ou ginecológico, além de assistência farmacêutica.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-3">
+            <span class="text-[11px] text-slate-500 font-medium">Condições exclusivas</span>
+            <button onclick="abrirModalEmpodera()" class="px-4 py-2 bg-bp-red hover:bg-bp-redDark text-white text-xs font-bold rounded-xl shadow-xs transition-all cursor-pointer">
+              Saber Mais
+            </button>
+          </div>
+        </article>
+
+        <!-- ============================================================ -->
+        <!-- CARD 6: LEMBRETE DIGITAL DE MAMOGRAFIA (FERRAMENTA INTERATIVA) -->
+        <!-- ============================================================ -->
+        <article id="card-lembrete" class="glass-card rounded-3xl p-6 sm:p-7 shadow-custom hover:shadow-rosa-glow transition-all duration-300 flex flex-col justify-between border-t-4 border-t-purple-500 group">
+          <div>
+            <div class="flex items-center justify-between mb-4">
+              <div class="w-12 h-12 rounded-2xl bg-purple-100 text-purple-700 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                🗓️
+              </div>
+              <span class="text-[10px] font-black uppercase tracking-wider bg-purple-50 text-purple-800 border border-purple-200 px-2.5 py-1 rounded-full">
+                Lembrete Digital
+              </span>
+            </div>
+
+            <h3 class="text-xl font-black text-bp-navy mb-2 group-hover:text-purple-700 transition-colors">
+              Agendar Meu Lembrete Rosa
+            </h3>
+            <p class="text-xs text-slate-600 leading-relaxed mb-4">
+              A rotina é corrida, mas seu cuidado não pode esperar. Salve um lembrete direto no seu calendário para agendar sua próxima mamografia ou preventivo.
+            </p>
+
+            <!-- Formulário Simples do Lembrete -->
+            <div class="bg-purple-50/50 rounded-2xl p-4 border border-purple-200 space-y-3 mb-3">
+              <div>
+                <label for="input-data-exame" class="block text-[11px] font-bold text-slate-700 mb-1">
+                  Mês do seu último exame ou preferência:
+                </label>
+                <input type="month" id="input-data-exame" value="2026-10" class="w-full text-xs font-semibold px-3 py-2 bg-white rounded-xl border border-slate-300 focus:ring-2 focus:ring-purple-400 focus:outline-hidden">
+              </div>
+
+              <div>
+                <label for="select-tipo-exame" class="block text-[11px] font-bold text-slate-700 mb-1">
+                  Tipo de exame:
+                </label>
+                <select id="select-tipo-exame" class="w-full text-xs font-semibold px-3 py-2 bg-white rounded-xl border border-slate-300 focus:ring-2 focus:ring-purple-400 focus:outline-hidden">
+                  <option value="Mamografia Preventiva Anual">Mamografia Preventiva (Anual)</option>
+                  <option value="Exame Clínico das Mamas">Exame Clínico das Mamas</option>
+                  <option value="Ultrassom Mamário">Ultrassonografia Mamária</option>
+                  <option value="Check-up Feminino Geral">Check-up Completo da Mulher</option>
+                </select>
+              </div>
+
+              <div class="pt-1">
+                <button type="button" onclick="gerarLembreteCalendario()" class="w-full py-2.5 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-xs font-bold rounded-xl shadow-xs transition-all flex items-center justify-center gap-2 cursor-pointer">
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+                  <span>Adicionar ao Calendário</span>
+                </button>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="pt-4 border-t border-slate-100 flex items-center justify-between mt-3">
+            <span class="text-[11px] text-slate-500 font-medium">Google / Apple / Outlook</span>
+            <span class="text-[10px] text-purple-700 font-bold">100% Privado</span>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SEÇÃO DETALHADA: LOCAIS DE APOIO E ATENDIMENTO NO PARÁ                    -->
+    <!-- ========================================================================= -->
+    <section id="locais-apoio" class="py-14 bg-white border-y border-pink-100">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-10">
+          <div>
+            <span class="text-xs font-black uppercase tracking-widest text-emerald-700 bg-emerald-100 px-3.5 py-1 rounded-full inline-block mb-3">
+              REDE DE ATENDIMENTO PÚBLICO
+            </span>
+            <h2 class="text-2xl sm:text-3xl font-black text-bp-navy tracking-tight">
+              Onde buscar apoio e exames gratuitos no Pará
+            </h2>
+            <p class="text-sm text-slate-600 mt-2 max-w-2xl">
+              Filtre por município para encontrar hospitais de referência, policlínicas metropolitanas e ambulatórios dedicados à saúde da mulher.
+            </p>
+          </div>
+
+          <!-- Filtro de Cidades / Regiões do Pará -->
+          <div class="flex flex-wrap items-center gap-2">
+            <button onclick="filtrarUnidades('todas', this)" class="btn-filter-regiao px-3.5 py-2 text-xs font-bold rounded-xl bg-bp-navy text-white shadow-xs cursor-pointer">
+              Todas as Regiões
+            </button>
+            <button onclick="filtrarUnidades('belem', this)" class="btn-filter-regiao px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-pink-100 text-slate-700 cursor-pointer transition-colors">
+              Belém e RMB
+            </button>
+            <button onclick="filtrarUnidades('santarem', this)" class="btn-filter-regiao px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-pink-100 text-slate-700 cursor-pointer transition-colors">
+              Santarém / Oeste
+            </button>
+            <button onclick="filtrarUnidades('maraba', this)" class="btn-filter-regiao px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-pink-100 text-slate-700 cursor-pointer transition-colors">
+              Marabá / Sul
+            </button>
+            <button onclick="filtrarUnidades('castanhal', this)" class="btn-filter-regiao px-3.5 py-2 text-xs font-bold rounded-xl bg-slate-100 hover:bg-pink-100 text-slate-700 cursor-pointer transition-colors">
+              Castanhal / Nordeste
+            </button>
+          </div>
+        </div>
+
+        <!-- Grid de Locais com Dados Detalhados -->
+        <div id="grid-unidades-saude" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Unidade 1: Ophir Loyola -->
+          <div class="card-unidade belem bg-slate-50 rounded-2xl p-5 border border-slate-200 hover:border-pink-300 transition-all shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[10px] font-black uppercase text-pink-700 bg-pink-100 px-2.5 py-0.5 rounded-full">Referência Estadual</span>
+                <span class="text-xs font-semibold text-slate-500">Belém</span>
+              </div>
+              <h4 class="text-base font-black text-bp-navy">Hospital Ophir Loyola (HOL)</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                Centro de Alta Complexidade em Oncologia (CACON). Atendimento com mamografia de alta resolução, biópsia, cirurgia e acompanhamento oncológico completo.
+              </p>
+              <div class="mt-3 text-xs text-slate-600 space-y-1">
+                <p>📍 <strong>Endereço:</strong> Av. Magalhães Barata, 992 - São Brás, Belém - PA</p>
+                <p>🕒 <strong>Atendimento:</strong> Seg a Sex, 07h às 18h</p>
+                <p>📞 <strong>Central:</strong> (91) 3265-6500</p>
+              </div>
+            </div>
+            <div class="pt-4 border-t border-slate-200 mt-4 flex items-center justify-between">
+              <a href="tel:9132656500" class="text-xs font-bold text-bp-royal hover:underline flex items-center gap-1">
+                <span>Ligar para o HOL</span>
+              </a>
+              <button onclick="comoChegarUnidade('Hospital Ophir Loyola, Belém')" class="text-xs font-bold text-pink-600 hover:text-pink-700 cursor-pointer">
+                Como Acessar via SUS →
+              </button>
+            </div>
+          </div>
+
+          <!-- Unidade 2: Policlínica Metropolitana -->
+          <div class="card-unidade belem bg-slate-50 rounded-2xl p-5 border border-slate-200 hover:border-pink-300 transition-all shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[10px] font-black uppercase text-blue-700 bg-blue-100 px-2.5 py-0.5 rounded-full">Exames & Especialidades</span>
+                <span class="text-xs font-semibold text-slate-500">Belém</span>
+              </div>
+              <h4 class="text-base font-black text-bp-navy">Policlínica Metropolitana de Belém</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                Ambulatório da Mulher com parque de diagnóstico por imagem de última geração. Realização de mamografias digitais e ultrassonografia de mamas com laudo rápido.
+              </p>
+              <div class="mt-3 text-xs text-slate-600 space-y-1">
+                <p>📍 <strong>Endereço:</strong> Av. Dr. Freitas, s/n - Marco, Belém - PA</p>
+                <p>🕒 <strong>Atendimento:</strong> Seg a Sex, 06h30 às 19h</p>
+                <p>📞 <strong>WhatsApp Regulação:</strong> (91) 98521-5110</p>
+              </div>
+            </div>
+            <div class="pt-4 border-t border-slate-200 mt-4 flex items-center justify-between">
+              <a href="tel:91985215110" class="text-xs font-bold text-bp-royal hover:underline">
+                Contatar Unidade
+              </a>
+              <button onclick="comoChegarUnidade('Policlínica Metropolitana de Belém')" class="text-xs font-bold text-pink-600 hover:text-pink-700 cursor-pointer">
+                Como Acessar via SUS →
+              </button>
+            </div>
+          </div>
+
+          <!-- Unidade 3: HRBA Santarém -->
+          <div class="card-unidade santarem bg-slate-50 rounded-2xl p-5 border border-slate-200 hover:border-pink-300 transition-all shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[10px] font-black uppercase text-emerald-700 bg-emerald-100 px-2.5 py-0.5 rounded-full">Oeste Paraense</span>
+                <span class="text-xs font-semibold text-slate-500">Santarém</span>
+              </div>
+              <h4 class="text-base font-black text-bp-navy">Hospital Regional do Baixo Amazonas</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                Referência oncológica para 20 municípios da região do Baixo Amazonas e Tapajós. Serviço estruturado de mastologia e quimioterapia.
+              </p>
+              <div class="mt-3 text-xs text-slate-600 space-y-1">
+                <p>📍 <strong>Endereço:</strong> Av. Sérgio Henn, 1100 - Diamantino, Santarém - PA</p>
+                <p>🕒 <strong>Atendimento:</strong> 24h (Urgências) / 07h às 17h (Ambulatório)</p>
+                <p>📞 <strong>Central:</strong> (93) 2101-0700</p>
+              </div>
+            </div>
+            <div class="pt-4 border-t border-slate-200 mt-4 flex items-center justify-between">
+              <a href="tel:9321010700" class="text-xs font-bold text-bp-royal hover:underline">
+                Ligar para o HRBA
+              </a>
+              <button onclick="comoChegarUnidade('Hospital Regional do Baixo Amazonas, Santarém')" class="text-xs font-bold text-pink-600 hover:text-pink-700 cursor-pointer">
+                Como Acessar via SUS →
+              </button>
+            </div>
+          </div>
+
+          <!-- Unidade 4: HRSP Marabá -->
+          <div class="card-unidade maraba bg-slate-50 rounded-2xl p-5 border border-slate-200 hover:border-pink-300 transition-all shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[10px] font-black uppercase text-purple-700 bg-purple-100 px-2.5 py-0.5 rounded-full">Carajás & Sul do Pará</span>
+                <span class="text-xs font-semibold text-slate-500">Marabá</span>
+              </div>
+              <h4 class="text-base font-black text-bp-navy">Hospital Regional do Sudeste do Pará</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                Unidade de Alta Complexidade Oncológica (UNACON). Suporte completo em diagnóstico por imagem e tratamento para os municípios do sudeste paraense.
+              </p>
+              <div class="mt-3 text-xs text-slate-600 space-y-1">
+                <p>📍 <strong>Endereço:</strong> Rodovia Transamazônica, Km 03 - Nova Marabá, Marabá - PA</p>
+                <p>🕒 <strong>Atendimento:</strong> 24h / Ambulatório de Seg a Sex</p>
+                <p>📞 <strong>Central:</strong> (94) 3329-8700</p>
+              </div>
+            </div>
+            <div class="pt-4 border-t border-slate-200 mt-4 flex items-center justify-between">
+              <a href="tel:9433298700" class="text-xs font-bold text-bp-royal hover:underline">
+                Ligar para o HRSP
+              </a>
+              <button onclick="comoChegarUnidade('Hospital Regional de Marabá')" class="text-xs font-bold text-pink-600 hover:text-pink-700 cursor-pointer">
+                Como Acessar via SUS →
+              </button>
+            </div>
+          </div>
+
+          <!-- Unidade 5: Hospital Regional de Castanhal -->
+          <div class="card-unidade castanhal bg-slate-50 rounded-2xl p-5 border border-slate-200 hover:border-pink-300 transition-all shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[10px] font-black uppercase text-amber-700 bg-amber-100 px-2.5 py-0.5 rounded-full">Nordeste Paraense</span>
+                <span class="text-xs font-semibold text-slate-500">Castanhal</span>
+              </div>
+              <h4 class="text-base font-black text-bp-navy">Hospital Regional de Castanhal</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                Referência oncológica para a região do Guamá e nordeste paraense, oferecendo consultas com mastologistas e exames de rastreio preventivo.
+              </p>
+              <div class="mt-3 text-xs text-slate-600 space-y-1">
+                <p>📍 <strong>Endereço:</strong> Estrada do Apeú, s/n - Castanhal - PA</p>
+                <p>🕒 <strong>Atendimento:</strong> Seg a Sex, 07h às 18h</p>
+                <p>📞 <strong>Central:</strong> (91) 3721-9900</p>
+              </div>
+            </div>
+            <div class="pt-4 border-t border-slate-200 mt-4 flex items-center justify-between">
+              <a href="tel:9137219900" class="text-xs font-bold text-bp-royal hover:underline">
+                Ligar para Castanhal
+              </a>
+              <button onclick="comoChegarUnidade('Hospital Regional de Castanhal')" class="text-xs font-bold text-pink-600 hover:text-pink-700 cursor-pointer">
+                Como Acessar via SUS →
+              </button>
+            </div>
+          </div>
+
+          <!-- Unidade 6: Carreta da Mulher / Ações Itinerantes do Governo do Pará -->
+          <div class="card-unidade belem santarem maraba castanhal bg-gradient-to-br from-pink-50 to-rose-50 rounded-2xl p-5 border border-pink-200 hover:border-pink-400 transition-all shadow-xs flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <span class="text-[10px] font-black uppercase text-pink-800 bg-pink-200 px-2.5 py-0.5 rounded-full">Ação Itinerante</span>
+                <span class="text-xs font-semibold text-pink-700">Todo o Pará</span>
+              </div>
+              <h4 class="text-base font-black text-bp-navy">Carreta da Mulher e Ações Móveis</h4>
+              <p class="text-xs text-slate-600 mt-1">
+                Unidades móveis do Governo do Estado que percorrem bairros e municípios levando mamografia digital, preventivo (PCCU) e consultas sem necessidade de agendamento prévio.
+              </p>
+              <div class="mt-3 text-xs text-slate-600 space-y-1">
+                <p>📍 <strong>Roteiro:</strong> Atualizado semanalmente pela SESPA</p>
+                <p>🕒 <strong>Horário:</strong> Por ordem de chegada com documento e cartão SUS</p>
+                <p>📞 <strong>Informações SESPA:</strong> (91) 4006-4200</p>
+              </div>
+            </div>
+            <div class="pt-4 border-t border-pink-200 mt-4 flex items-center justify-between">
+              <a href="tel:9140064200" class="text-xs font-bold text-bp-rosaDark hover:underline">
+                Consultar Roteiro
+              </a>
+              <button onclick="showModal('Carreta da Mulher - Documentação Necessária', '<p>Para realizar mamografia ou preventivo na Carreta da Mulher, basta comparecer com:</p><ul class=\'list-disc pl-5 space-y-1 mt-2\'><li>Documento oficial com foto (RG ou CNH)</li><li>Cartão Nacional do SUS</li><li>Comprovante de residência atualizado</li></ul><p class=\'mt-3 text-slate-500\'>O atendimento é 100% gratuito e o resultado é disponibilizado em formato digital.</p>')" class="text-xs font-bold text-pink-600 hover:text-pink-700 cursor-pointer">
+                Documentos Necessários →
+              </button>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Banner Explicativo: Como funciona o acesso pelo SUS no Pará -->
+        <div class="mt-10 p-6 rounded-3xl bg-pink-50 border border-pink-200 flex flex-col md:flex-row items-center justify-between gap-6">
+          <div class="flex items-start gap-4">
+            <div class="w-12 h-12 rounded-2xl bg-white text-bp-rosaDark flex items-center justify-center text-2xl shadow-xs shrink-0">
+              💡
+            </div>
+            <div>
+              <h4 class="text-base font-bold text-bp-navy">Primeira vez buscando atendimento?</h4>
+              <p class="text-xs text-slate-600 mt-1 leading-relaxed">
+                A porta de entrada do SUS é a <strong>Unidade Básica de Saúde (UBS)</strong> do seu bairro. A enfermeira ou médico faz a avaliação e encaminha você pelo Sistema de Regulação do Pará para o Hospital Ophir Loyola ou Policlínica.
+              </p>
+            </div>
+          </div>
+          <button onclick="abrirModalGuiaSUS()" class="px-5 py-2.5 bg-bp-navy hover:bg-bp-royal text-white text-xs font-bold rounded-xl shrink-0 transition-colors cursor-pointer">
+            Entenda o Passo a Passo do SUS
+          </button>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SEÇÃO DE ESCUTA ATIVA & CANAIS DE SUPORTE IMEDIATO                        -->
+    <!-- ========================================================================= -->
+    <section class="py-12 bg-slate-900 text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <div class="text-center max-w-2xl mx-auto mb-10">
+          <span class="text-xs font-black uppercase tracking-widest text-pink-400 bg-pink-500/20 px-3 py-1 rounded-full inline-block mb-2">
+            VOCÊ NÃO ESTÁ SOZINHA
+          </span>
+          <h2 class="text-2xl sm:text-3xl font-black text-white">
+            Canais de Apoio e Linha Direta
+          </h2>
+          <p class="text-xs sm:text-sm text-slate-300 mt-2">
+            Precisa de orientação médica, apoio emocional ou suporte para agendamentos? Estes canais são gratuitos e funcionam para acolher você.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+          
+          <!-- Canal 1: Disque Saúde -->
+          <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+            <span class="text-2xl block mb-2">📞</span>
+            <div class="text-lg font-black text-white">Disque 136</div>
+            <div class="text-xs font-bold text-pink-300">Disque Saúde do SUS</div>
+            <p class="text-[11px] text-slate-400 mt-2">
+              Informações sobre exames de mamografia, campanhas e localização de UBSs em todo o estado do Pará.
+            </p>
+            <a href="tel:136" class="inline-block mt-3 text-xs font-bold text-pink-400 hover:text-pink-300">Ligar Grátis →</a>
+          </div>
+
+          <!-- Canal 2: Central de Atendimento à Mulher -->
+          <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+            <span class="text-2xl block mb-2">👩</span>
+            <div class="text-lg font-black text-white">Ligue 180</div>
+            <div class="text-xs font-bold text-pink-300">Central da Mulher</div>
+            <p class="text-[11px] text-slate-400 mt-2">
+              Orientação sobre direitos das mulheres, acolhimento psicossocial e suporte em situações de vulnerabilidade.
+            </p>
+            <a href="tel:180" class="inline-block mt-3 text-xs font-bold text-pink-400 hover:text-pink-300">Ligar Grátis →</a>
+          </div>
+
+          <!-- Canal 3: Apoio Emocional CVV -->
+          <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+            <span class="text-2xl block mb-2">💛</span>
+            <div class="text-lg font-black text-white">Disque 188</div>
+            <div class="text-xs font-bold text-pink-300">Apoio Emocional CVV</div>
+            <p class="text-[11px] text-slate-400 mt-2">
+              Atendimento 24 horas gratuito para acolhimento fraterno e suporte psicológico diante de diagnósticos e momentos difíceis.
+            </p>
+            <a href="tel:188" class="inline-block mt-3 text-xs font-bold text-pink-400 hover:text-pink-300">Ligar Grátis →</a>
+          </div>
+
+          <!-- Canal 4: SAC Banpará -->
+          <div class="bg-slate-800/80 p-5 rounded-2xl border border-slate-700 hover:border-pink-500 transition-colors">
+            <span class="text-2xl block mb-2">🏛️</span>
+            <div class="text-lg font-black text-white">0800 280 6605</div>
+            <div class="text-xs font-bold text-pink-300">SAC Banpará Oficial</div>
+            <p class="text-[11px] text-slate-400 mt-2">
+              Dúvidas sobre o Empodera Banpará, Seguro Mulher e agendamento de atendimento nas nossas agências.
+            </p>
+            <a href="tel:08002806605" class="inline-block mt-3 text-xs font-bold text-pink-400 hover:text-pink-300">Ligar Grátis →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========================================================================= -->
+    <!-- SEÇÃO FINAL: CHAMADA DE RELACIONAMENTO & PORTAL BANPARÁ                   -->
+    <!-- ========================================================================= -->
+    <section class="py-12 bg-pink-50 border-t border-pink-200">
+      <div class="max-w-5xl mx-auto px-4 sm:px-8 text-center">
+        <img src="banpara-logo.png" alt="Banpará" class="h-12 w-auto mx-auto mb-4 object-contain">
+        <h3 class="text-xl sm:text-2xl font-black text-bp-navy">
+          O Banpará acredita na força e na saúde de cada mulher paraense.
+        </h3>
+        <p class="text-xs sm:text-sm text-slate-600 mt-2 max-w-xl mx-auto">
+          Compartilhe esta página com sua mãe, filhas, amigas e colegas de trabalho. O carinho e a informação salvam vidas todos os dias.
+        </p>
+
+        <div class="flex flex-wrap items-center justify-center gap-3 mt-6">
+          <button onclick="compartilharCampanha()" class="px-5 py-2.5 bg-gradient-to-r from-pink-600 to-rose-600 hover:from-pink-700 hover:to-rose-700 text-white text-xs font-bold rounded-xl shadow-xs transition-all flex items-center gap-2 cursor-pointer">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"/></svg>
+            <span>Compartilhar via WhatsApp</span>
+          </button>
+
+          <a href="base-site.html" class="px-5 py-2.5 bg-white hover:bg-slate-50 text-bp-navy border border-slate-300 text-xs font-bold rounded-xl shadow-xs transition-all flex items-center gap-2">
+            <span>Ir para o Portal de Soluções Banpará</span>
+            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER INSTITUCIONAL OFICIAL BANPARÁ (PADRONIZADO COM O PORTAL)           -->
+  <!-- ========================================================================= -->
+  <footer class="bg-[#0B1528] text-slate-400 text-xs py-8 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-8">
+      
+      <div class="flex flex-col md:flex-row items-center justify-between gap-6 pb-6 border-b border-slate-800 text-center md:text-left">
+        <div>
+          <div class="flex items-center justify-center md:justify-start gap-2 mb-1.5">
+            <div class="w-6 h-6 bg-bp-red rounded-sm flex items-center justify-center text-white font-black text-xs">B</div>
+            <span class="text-base font-black text-white">Banpará</span>
+            <span class="text-[10px] text-pink-400 font-bold">• Campanha Outubro Rosa 2026</span>
+          </div>
+          <p class="text-[11px] text-slate-400">
+            Banco do Estado do Pará S.A. | CNPJ: 04.895.722/0001-22 | Av. Presidente Vargas, 251 - Campina, Belém - PA
+          </p>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-6 text-[11px] text-slate-300">
+          <div><strong class="text-white">SAC Geral:</strong> 0800 280 6605</div>
+          <div><strong class="text-white">Ouvidoria:</strong> 0800 280 9040</div>
+          <div><strong class="text-white">Deficientes Auditivos:</strong> 0800 280 0089</div>
+        </div>
+      </div>
+
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-between gap-2 text-[10px] text-slate-500">
+        <p>© 2026 Banpará. Portal Oficial de Relacionamento e Extensão Outubro Rosa. Governo do Estado do Pará.</p>
+        <p class="flex items-center gap-1 text-emerald-400">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/></svg>
+          Conexão Segura Criptografada SSL
+        </p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ========================================================================= -->
+  <!-- MODAL GENÉRICO PARA DETALHES, AUTOEXAME E EMPODERA BANPARÁ                 -->
+  <!-- ========================================================================= -->
+  <div id="app-modal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-xs flex items-center justify-center p-4 hidden">
+    <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-7 shadow-float border border-pink-100 max-h-[90vh] overflow-y-auto">
+      <div class="flex items-center justify-between pb-3 border-b border-pink-100">
+        <div class="flex items-center gap-2">
+          <img src="laco-outubro-rosa.png" alt="Laço" class="h-5 w-auto">
+          <h4 id="modal-title" class="text-base font-extrabold text-bp-navy">Título</h4>
+        </div>
+        <button onclick="closeModal()" class="w-8 h-8 rounded-full text-slate-400 hover:text-slate-800 hover:bg-slate-100 flex items-center justify-center cursor-pointer">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+
+      <div id="modal-body" class="py-4 text-xs text-slate-600 leading-relaxed space-y-3">
+        <!-- Conteúdo Injetado Dinamicamente -->
+      </div>
+
+      <div class="pt-3 border-t border-slate-100 flex justify-end">
+        <button onclick="closeModal()" class="px-5 py-2.5 bg-bp-royal text-white text-xs font-bold rounded-xl hover:bg-bp-navy transition-all cursor-pointer">
+          Entendi, Fechar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOAST DE NOTIFICAÇÃO FLUTUANTE -->
+  <div id="toast-notify" class="fixed bottom-6 right-6 z-50 bg-slate-900 text-white text-xs font-bold px-4 py-3 rounded-2xl shadow-float flex items-center gap-2 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+    <svg class="w-4 h-4 text-pink-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+    <span id="toast-text">Notificação do sistema</span>
+  </div>
+
+  <!-- Script da Aplicação -->
+  <script src="app.js"></script>
+</body>
+</html>

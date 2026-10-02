@@ -1,0 +1,18 @@
+services:
+  outubro-rosa-banpara:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: banpara-outubro-rosa
+    restart: unless-stopped
+    ports:
+      # Caso a porta 80 do servidor já esteja em uso por um proxy reverso
+      # (como Nginx Proxy Manager, Traefik ou Apache), altere para: "8080:80" ou "3000:80"
+      - "80:80"
+    environment:
+      - TZ=America/Belem
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"

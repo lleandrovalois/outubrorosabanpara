@@ -1,0 +1,19 @@
+# Dependências & Logs
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema Operacional
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE e Ambiente
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Arquivos de Teste Interno
+preview-assets.html
