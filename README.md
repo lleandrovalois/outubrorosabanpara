@@ -38,8 +38,8 @@ O projeto já conta com `Dockerfile` (Nginx Alpine otimizado com Gzip, cache e h
 docker compose up -d --build
 ```
 
-A aplicação estará rodando imediatamente na porta `80` do seu servidor:
-`http://SEU_IP_DO_SERVIDOR/`
+A aplicação estará rodando imediatamente na porta `8090` do seu servidor:
+👉 `http://SEU_IP_DO_SERVIDOR:8090/`
 
 ---
 
